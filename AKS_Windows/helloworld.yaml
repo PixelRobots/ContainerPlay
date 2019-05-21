@@ -16,7 +16,7 @@ spec:
         "beta.kubernetes.io/os": windows
       containers:
       - name: helloworld
-        image: pixelrobot/containerplay:v1
+        image: pixelrobot/containerplay:v2
         resources:
           limits:
             cpu: 1
