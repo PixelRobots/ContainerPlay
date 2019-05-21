@@ -13,7 +13,7 @@ spec:
         app: helloworld
     spec:
       nodeSelector:
-        "kubernetes.io/os": windows
+        "beta.kubernetes.io/os": windows
       containers:
       - name: helloworld
         image: pixelrobot/containerplay:v2
