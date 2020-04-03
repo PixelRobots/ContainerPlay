@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Utils
+namespace libbar
 {
-    public static class StringUtils
+    public class StringUtils
     {
         public static string ReverseString(string input)
         {

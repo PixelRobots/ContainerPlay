@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System;
 using Xunit;
-using Utils;
+using libbar;
+using libfoo;
 
-namespace Tests
+namespace tests
 {
-    public class StringUtilsTests
+    public class UnitTest1
     {
-
         [Fact]
         public void ReverseString()
         {
@@ -16,6 +14,14 @@ namespace Tests
             var expectedString = "god yzal eht revo spmuj xof nworb kciuq ehT";
             var returnedString = StringUtils.ReverseString(inputString);
             Assert.True(expectedString == returnedString, "The input string was not reversed correctly.");
+        }
+
+        [Fact]
+        public void InputString()
+        {
+            var inputString = "The quick brown fox jumps over the lazy dog";
+            var returnedString = StringLibrary.GetString();
+            Assert.True(inputString == returnedString, "The input string was not correct.");
         }
     }
 }
